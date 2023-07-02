@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Overpass";
+	font-weight: 400;
+	font-style: normal;
+	src: url("../assets/fonts/Overpass-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Overpass Bold";
+	font-weight: 700;
+	font-style: normal;
+	src: url("../assets/fonts/Overpass-Bold.ttf") format("truetype");
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	background-color: hsl(216, 12%, 8%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Overpass";
+}
+
+.ratingComponent {
+	max-width: 90vw;
+	padding: 1.5em;
+	border-radius: 25px;
+	background-color: hsl(213, 19%, 18%);
+}
+
+.feedback__imageContainer {
+	min-height: 3em;
+	max-width: 3em;
+	border-radius: 50%;
+	background-color: hsl(216, 12%, 30%);
+	position: relative;
+}
+
+.feedback__image {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+.feedback__title {
+	margin-bottom: 0px;
+	color: white;
+	font-weight: 700;
+	font-size: 2em;
+	letter-spacing: 0.1rem;
+}
+
+.feedback__paragraph {
+	margin-bottom: 2.5em;
+	color: hsl(217, 12%, 63%);
+	font-size: 0.95em;
+	line-height: 1.4em;
+}
+
+.rating__buttonsContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rating__button {
+	padding: 1em;
+	outline: none;
+	border-radius: 50%;
+	border: none;
+	background-color: hsl(216, 12%, 30%);
+	color: hsl(217, 12%, 63%);
+	font-family: inherit;
+	line-height: 0.62em;
+	font-size: 1em;
+}
+
+.rating__sendButtonContainer {
+	margin-top: 1.5em;
+	display: flex;
+	justify-content: center;
+}
+
+.rating__submitButton {
+	padding: 1em 0em 1em 0em;
+	width: 100%;
+	outline: none;
+	border-radius: 3em;
+	border: none;
+	background-color: hsl(25, 97%, 53%);
+	color: white;
+	font-family: inherit;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
